@@ -1,0 +1,6 @@
+string question
+bool auto_triggered
+---
+string explanation
+---
+string feedback

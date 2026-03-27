@@ -1,0 +1,30 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+from setuptools import find_packages, setup
+from glob import glob
+
+NAME = "component_explainer_sittable"
+
+setup(
+    name=NAME,
+    version="0.1.0",
+    license="Apache-2.0",
+    description="component_explainer_sittable",
+    author="todo",
+    author_email="todo@todo.todo",
+    packages=find_packages(exclude=['test']),
+    data_files=[
+        ('share/' + NAME, ['package.xml']),
+        ('share/ament_index/resource_index/packages', ['res/' + NAME]),
+        ('share/' + NAME + '/launch', glob('launch/*.launch.py')),
+    ],
+    tests_require=['pytest'],
+    install_requires=['setuptools'],
+    zip_safe=True,
+    entry_points={
+        'console_scripts': [
+            'start_component_explainer = ' + NAME + '.start_component_explainer:main'
+        ],
+    },
+)

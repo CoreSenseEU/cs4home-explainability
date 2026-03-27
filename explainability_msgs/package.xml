@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>explainability_msgs</name>
+  <version>0.1.0</version>
+  <description>{{id}} skill definition</description>
+  <maintainer email="todo@todo.todo">TODO</maintainer>
+  <license>Apache License 2.0</license>
+
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
+  <buildtool_depend>rosidl_default_generators</buildtool_depend>
+
+  <depend>builtin_interfaces</depend>
+  <depend>action_msgs</depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+
+  <test_depend>ament_cmake_xmllint</test_depend>
+  <test_depend>ament_cmake_archlint</test_depend>
+  <test_depend>ament_lint_auto</test_depend>
+
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+</package>

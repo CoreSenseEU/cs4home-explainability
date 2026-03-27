@@ -1,0 +1,2176 @@
+{
+  "/rosout": {
+    "1774363536587238018": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 359,
+      "msg": "Received a goal, begin computing control effort.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363536,
+        "nanosec": 587171132
+      }
+    },
+    "1774363536587258526": {
+      "file": "./src/controller_server.cpp",
+      "function": "findGoalCheckerId",
+      "level": 30,
+      "line": 335,
+      "msg": "No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363536,
+        "nanosec": 587236775
+      }
+    },
+    "1774363537637474333": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363537,
+        "nanosec": 637416144
+      }
+    },
+    "1774363538687473142": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363538,
+        "nanosec": 687411567
+      }
+    },
+    "1774363539687469856": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363539,
+        "nanosec": 687412348
+      }
+    },
+    "1774363540737461262": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363540,
+        "nanosec": 737409785
+      }
+    },
+    "1774363541737452555": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363541,
+        "nanosec": 737409514
+      }
+    },
+    "1774363541889182875": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 409,
+      "msg": "Reached the goal!",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363541,
+        "nanosec": 889125046
+      }
+    },
+    "1774363619811963471": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 359,
+      "msg": "Received a goal, begin computing control effort.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363619,
+        "nanosec": 811868122
+      }
+    },
+    "1774363620862186250": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363620,
+        "nanosec": 862067177
+      }
+    },
+    "1774363621912120128": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363621,
+        "nanosec": 912061729
+      }
+    },
+    "1774363622912229142": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363622,
+        "nanosec": 912071897
+      }
+    },
+    "1774363623962183929": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363623,
+        "nanosec": 962067631
+      }
+    },
+    "1774363624962133414": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363624,
+        "nanosec": 962065868
+      }
+    },
+    "1774363626012160577": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363626,
+        "nanosec": 12069587
+      }
+    },
+    "1774363627012121974": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363627,
+        "nanosec": 12067001
+      }
+    },
+    "1774363628062133688": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363628,
+        "nanosec": 62068716
+      }
+    },
+    "1774363629112162374": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363629,
+        "nanosec": 112069280
+      }
+    },
+    "1774363629812191864": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 40,
+      "line": 420,
+      "msg": "Failed to make progress",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363629,
+        "nanosec": 812115290
+      }
+    },
+    "1774363629812217392": {
+      "file": "/opt/ros/humble/include/nav2_util/simple_action_server.hpp",
+      "function": "warn_msg",
+      "level": 30,
+      "line": 605,
+      "msg": "[follow_path] [ActionServer] Aborting handle.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363629,
+        "nanosec": 812186143
+      }
+    },
+    "1774363629831566479": {
+      "file": "./src/clear_costmap_service.cpp",
+      "function": "clearEntireCallback",
+      "level": 20,
+      "line": 95,
+      "msg": "Received request to clear entirely the local_costmap",
+      "name": "local_costmap.local_costmap",
+      "stamp": {
+        "sec": 1774363629,
+        "nanosec": 831508310
+      }
+    },
+    "1774363629832139292": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 359,
+      "msg": "Received a goal, begin computing control effort.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363629,
+        "nanosec": 832057169
+      }
+    },
+    "1774363630023778616": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 30,
+      "line": 414,
+      "msg": "Control loop missed its desired rate of 20.0000Hz",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363630,
+        "nanosec": 23721539
+      }
+    },
+    "1774363630126815712": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363630,
+        "nanosec": 126753535
+      }
+    },
+    "1774363631161712402": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363631,
+        "nanosec": 161578181
+      }
+    },
+    "1774363632173875143": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363632,
+        "nanosec": 173799922
+      }
+    },
+    "1774363633223870015": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363633,
+        "nanosec": 223783243
+      }
+    },
+    "1774363634223879613": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363634,
+        "nanosec": 223786388
+      }
+    },
+    "1774363635273860459": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363635,
+        "nanosec": 273786110
+      }
+    },
+    "1774363636323851003": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363636,
+        "nanosec": 323781222
+      }
+    },
+    "1774363637323838219": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363637,
+        "nanosec": 323779248
+      }
+    },
+    "1774363638373838952": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363638,
+        "nanosec": 373776345
+      }
+    },
+    "1774363639373847768": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363639,
+        "nanosec": 373778068
+      }
+    },
+    "1774363640423856727": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363640,
+        "nanosec": 423783049
+      }
+    },
+    "1774363641473842593": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363641,
+        "nanosec": 473779905
+      }
+    },
+    "1774363642473869633": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363642,
+        "nanosec": 473786287
+      }
+    },
+    "1774363643523862702": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363643,
+        "nanosec": 523787110
+      }
+    },
+    "1774363644523868232": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363644,
+        "nanosec": 523782952
+      }
+    },
+    "1774363645573858265": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363645,
+        "nanosec": 573781120
+      }
+    },
+    "1774363646623870420": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363646,
+        "nanosec": 623783126
+      }
+    },
+    "1774363647623863516": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363647,
+        "nanosec": 623780511
+      }
+    },
+    "1774363648276768372": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 409,
+      "msg": "Reached the goal!",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363648,
+        "nanosec": 276697539
+      }
+    },
+    "1774363670151249047": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 359,
+      "msg": "Received a goal, begin computing control effort.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363670,
+        "nanosec": 151148729
+      }
+    },
+    "1774363671201442061": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363671,
+        "nanosec": 201363904
+      }
+    },
+    "1774363672201419388": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363672,
+        "nanosec": 201360608
+      }
+    },
+    "1774363673251429809": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363673,
+        "nanosec": 251363505
+      }
+    },
+    "1774363674301424261": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363674,
+        "nanosec": 301361744
+      }
+    },
+    "1774363675301433708": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363675,
+        "nanosec": 301364108
+      }
+    },
+    "1774363675704442897": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 409,
+      "msg": "Reached the goal!",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363675,
+        "nanosec": 703748736
+      }
+    },
+    "1774363700985843878": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 359,
+      "msg": "Received a goal, begin computing control effort.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363700,
+        "nanosec": 985764359
+      }
+    },
+    "1774363702036209325": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363702,
+        "nanosec": 36020621
+      }
+    },
+    "1774363703086089903": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363703,
+        "nanosec": 86015995
+      }
+    },
+    "1774363704086090043": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363704,
+        "nanosec": 86013249
+      }
+    },
+    "1774363705136096317": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363705,
+        "nanosec": 136019603
+      }
+    },
+    "1774363706136077922": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363706,
+        "nanosec": 136012820
+      }
+    },
+    "1774363707186111918": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363707,
+        "nanosec": 186016449
+      }
+    },
+    "1774363708236081903": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363708,
+        "nanosec": 236016110
+      }
+    },
+    "1774363709236098845": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363709,
+        "nanosec": 236015318
+      }
+    },
+    "1774363710286080122": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363710,
+        "nanosec": 286012064
+      }
+    },
+    "1774363710986161589": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 40,
+      "line": 420,
+      "msg": "Failed to make progress",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363710,
+        "nanosec": 986064647
+      }
+    },
+    "1774363710986296872": {
+      "file": "/opt/ros/humble/include/nav2_util/simple_action_server.hpp",
+      "function": "warn_msg",
+      "level": 30,
+      "line": 605,
+      "msg": "[follow_path] [ActionServer] Aborting handle.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363710,
+        "nanosec": 986240847
+      }
+    },
+    "1774363711005546413": {
+      "file": "./src/clear_costmap_service.cpp",
+      "function": "clearEntireCallback",
+      "level": 20,
+      "line": 95,
+      "msg": "Received request to clear entirely the local_costmap",
+      "name": "local_costmap.local_costmap",
+      "stamp": {
+        "sec": 1774363711,
+        "nanosec": 5469599
+      }
+    },
+    "1774363711006278926": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 359,
+      "msg": "Received a goal, begin computing control effort.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363711,
+        "nanosec": 6033296
+      }
+    },
+    "1774363711306403895": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363711,
+        "nanosec": 306319978
+      }
+    },
+    "1774363712356395170": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363712,
+        "nanosec": 356315251
+      }
+    },
+    "1774363713356406141": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363713,
+        "nanosec": 356317625
+      }
+    },
+    "1774363714406416482": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363714,
+        "nanosec": 406325281
+      }
+    },
+    "1774363715406540464": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363715,
+        "nanosec": 406321954
+      }
+    },
+    "1774363716456422976": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363716,
+        "nanosec": 456324100
+      }
+    },
+    "1774363717506410965": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363717,
+        "nanosec": 506323391
+      }
+    },
+    "1774363718506411125": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363718,
+        "nanosec": 506320195
+      }
+    },
+    "1774363719556398153": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363719,
+        "nanosec": 556318634
+      }
+    },
+    "1774363720556408061": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363720,
+        "nanosec": 556318483
+      }
+    },
+    "1774363721606417701": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363721,
+        "nanosec": 606318144
+      }
+    },
+    "1774363722656407123": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363722,
+        "nanosec": 656318186
+      }
+    },
+    "1774363723656388387": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363723,
+        "nanosec": 656315090
+      }
+    },
+    "1774363724706452059": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363724,
+        "nanosec": 706317106
+      }
+    },
+    "1774363725706399430": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363725,
+        "nanosec": 706315783
+      }
+    },
+    "1774363726108275725": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 409,
+      "msg": "Reached the goal!",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363726,
+        "nanosec": 108228216
+      }
+    },
+    "1774363882849715851": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 359,
+      "msg": "Received a goal, begin computing control effort.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363882,
+        "nanosec": 849593992
+      }
+    },
+    "1774363883899886232": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363883,
+        "nanosec": 899822994
+      }
+    },
+    "1774363884949925097": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363884,
+        "nanosec": 949823537
+      }
+    },
+    "1774363885949893317": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363885,
+        "nanosec": 949822023
+      }
+    },
+    "1774363886999874263": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363886,
+        "nanosec": 999818849
+      }
+    },
+    "1774363887999869915": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363887,
+        "nanosec": 999817717
+      }
+    },
+    "1774363889049895344": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363889,
+        "nanosec": 49819963
+      }
+    },
+    "1774363890099900867": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363890,
+        "nanosec": 99821097
+      }
+    },
+    "1774363891099900445": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363891,
+        "nanosec": 99822569
+      }
+    },
+    "1774363892149899596": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363892,
+        "nanosec": 149818604
+      }
+    },
+    "1774363893149906448": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363893,
+        "nanosec": 149819836
+      }
+    },
+    "1774363894199900319": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363894,
+        "nanosec": 199818375
+      }
+    },
+    "1774363895249910269": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363895,
+        "nanosec": 249821894
+      }
+    },
+    "1774363896249894129": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363896,
+        "nanosec": 249821002
+      }
+    },
+    "1774363897300010318": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363897,
+        "nanosec": 299837615
+      }
+    },
+    "1774363898299928865": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363898,
+        "nanosec": 299819220
+      }
+    },
+    "1774363899349910643": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363899,
+        "nanosec": 349821747
+      }
+    },
+    "1774363900399879196": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363900,
+        "nanosec": 399817000
+      }
+    },
+    "1774363901399885277": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363901,
+        "nanosec": 399820796
+      }
+    },
+    "1774363901952592057": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 409,
+      "msg": "Reached the goal!",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363901,
+        "nanosec": 952518559
+      }
+    },
+    "1774363946190538662": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 359,
+      "msg": "Received a goal, begin computing control effort.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363946,
+        "nanosec": 190416513
+      }
+    },
+    "1774363947240784415": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363947,
+        "nanosec": 240697352
+      }
+    },
+    "1774363948290784377": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363948,
+        "nanosec": 290688086
+      }
+    },
+    "1774363949290770029": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363949,
+        "nanosec": 290688196
+      }
+    },
+    "1774363950340771594": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363950,
+        "nanosec": 340691715
+      }
+    },
+    "1774363951340768718": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363951,
+        "nanosec": 340691544
+      }
+    },
+    "1774363951343948857": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 409,
+      "msg": "Reached the goal!",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363951,
+        "nanosec": 343562133
+      }
+    },
+    "1774363971267633996": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 359,
+      "msg": "Received a goal, begin computing control effort.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363971,
+        "nanosec": 267502209
+      }
+    },
+    "1774363972317847488": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363972,
+        "nanosec": 317760444
+      }
+    },
+    "1774363973367828965": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363973,
+        "nanosec": 367748394
+      }
+    },
+    "1774363974367821961": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363974,
+        "nanosec": 367745348
+      }
+    },
+    "1774363975417836601": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363975,
+        "nanosec": 417750129
+      }
+    },
+    "1774363975820388893": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 409,
+      "msg": "Reached the goal!",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363975,
+        "nanosec": 820295478
+      }
+    },
+    "1774363984081136722": {
+      "file": "/opt/ros/humble/include/tf2_ros/tf2_ros/message_filter.hpp",
+      "function": "signalFailure",
+      "level": 20,
+      "line": 706,
+      "msg": "Message Filter dropping message: frame 'base_laser_link' at time 1774363983.727 for reason 'the timestamp on the message is earlier than all the data in the transform cache'",
+      "name": "local_costmap.local_costmap",
+      "stamp": {
+        "sec": 1774363984,
+        "nanosec": 81046192
+      }
+    },
+    "1774363989658295378": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 359,
+      "msg": "Received a goal, begin computing control effort.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363989,
+        "nanosec": 658188988
+      }
+    },
+    "1774363990708487540": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363990,
+        "nanosec": 708396219
+      }
+    },
+    "1774363991758658342": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363991,
+        "nanosec": 758374520
+      }
+    },
+    "1774363992758477102": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363992,
+        "nanosec": 758396471
+      }
+    },
+    "1774363993808484858": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363993,
+        "nanosec": 808398627
+      }
+    },
+    "1774363994858504076": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363994,
+        "nanosec": 858400202
+      }
+    },
+    "1774363995858489699": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363995,
+        "nanosec": 858399119
+      }
+    },
+    "1774363996908503938": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363996,
+        "nanosec": 908351512
+      }
+    },
+    "1774363997908550635": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363997,
+        "nanosec": 908396826
+      }
+    },
+    "1774363998958500583": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363998,
+        "nanosec": 958397910
+      }
+    },
+    "1774363999658533018": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 40,
+      "line": 420,
+      "msg": "Failed to make progress",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363999,
+        "nanosec": 658442068
+      }
+    },
+    "1774363999658610093": {
+      "file": "/opt/ros/humble/include/nav2_util/simple_action_server.hpp",
+      "function": "warn_msg",
+      "level": 30,
+      "line": 605,
+      "msg": "[follow_path] [ActionServer] Aborting handle.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363999,
+        "nanosec": 658527849
+      }
+    },
+    "1774363999677984858": {
+      "file": "./src/clear_costmap_service.cpp",
+      "function": "clearEntireCallback",
+      "level": 20,
+      "line": 95,
+      "msg": "Received request to clear entirely the local_costmap",
+      "name": "local_costmap.local_costmap",
+      "stamp": {
+        "sec": 1774363999,
+        "nanosec": 677918734
+      }
+    },
+    "1774363999678642531": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 359,
+      "msg": "Received a goal, begin computing control effort.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363999,
+        "nanosec": 678559014
+      }
+    },
+    "1774363999821938466": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 30,
+      "line": 414,
+      "msg": "Control loop missed its desired rate of 20.0000Hz",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363999,
+        "nanosec": 821849268
+      }
+    },
+    "1774363999978412053": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774363999,
+        "nanosec": 978296457
+      }
+    },
+    "1774364001022021390": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364001,
+        "nanosec": 21913468
+      }
+    },
+    "1774364002022005650": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364002,
+        "nanosec": 21909510
+      }
+    },
+    "1774364002523908250": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 409,
+      "msg": "Reached the goal!",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364002,
+        "nanosec": 523829352
+      }
+    },
+    "1774364013104971821": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 359,
+      "msg": "Received a goal, begin computing control effort.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364013,
+        "nanosec": 104864210
+      }
+    },
+    "1774364014155399715": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364014,
+        "nanosec": 155294879
+      }
+    },
+    "1774364014158152063": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 409,
+      "msg": "Reached the goal!",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364014,
+        "nanosec": 158101097
+      }
+    },
+    "1774364014194604729": {
+      "file": "./src/clear_costmap_service.cpp",
+      "function": "clearEntireCallback",
+      "level": 20,
+      "line": 95,
+      "msg": "Received request to clear entirely the local_costmap",
+      "name": "local_costmap.local_costmap",
+      "stamp": {
+        "sec": 1774364014,
+        "nanosec": 194535530
+      }
+    },
+    "1774364014194812839": {
+      "file": "./src/clear_costmap_service.cpp",
+      "function": "clearEntireCallback",
+      "level": 20,
+      "line": 95,
+      "msg": "Received request to clear entirely the global_costmap",
+      "name": "global_costmap.global_costmap",
+      "stamp": {
+        "sec": 1774364014,
+        "nanosec": 194762535
+      }
+    },
+    "1774364014204917985": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 359,
+      "msg": "Received a goal, begin computing control effort.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364014,
+        "nanosec": 204807217
+      }
+    },
+    "1774364014227613733": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 409,
+      "msg": "Reached the goal!",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364014,
+        "nanosec": 227563058
+      }
+    },
+    "1774364014254640788": {
+      "file": "./src/clear_costmap_service.cpp",
+      "function": "clearEntireCallback",
+      "level": 20,
+      "line": 95,
+      "msg": "Received request to clear entirely the local_costmap",
+      "name": "local_costmap.local_costmap",
+      "stamp": {
+        "sec": 1774364014,
+        "nanosec": 254574574
+      }
+    },
+    "1774364014254897469": {
+      "file": "./src/clear_costmap_service.cpp",
+      "function": "clearEntireCallback",
+      "level": 20,
+      "line": 95,
+      "msg": "Received request to clear entirely the global_costmap",
+      "name": "global_costmap.global_costmap",
+      "stamp": {
+        "sec": 1774364014,
+        "nanosec": 254822288
+      }
+    },
+    "1774364014264794404": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 359,
+      "msg": "Received a goal, begin computing control effort.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364014,
+        "nanosec": 264718342
+      }
+    },
+    "1774364014428515894": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 409,
+      "msg": "Reached the goal!",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364014,
+        "nanosec": 428158234
+      }
+    },
+    "1774364014454651939": {
+      "file": "./src/clear_costmap_service.cpp",
+      "function": "clearEntireCallback",
+      "level": 20,
+      "line": 95,
+      "msg": "Received request to clear entirely the local_costmap",
+      "name": "local_costmap.local_costmap",
+      "stamp": {
+        "sec": 1774364014,
+        "nanosec": 454587809
+      }
+    },
+    "1774364014454900234": {
+      "file": "./src/clear_costmap_service.cpp",
+      "function": "clearEntireCallback",
+      "level": 20,
+      "line": 95,
+      "msg": "Received request to clear entirely the global_costmap",
+      "name": "global_costmap.global_costmap",
+      "stamp": {
+        "sec": 1774364014,
+        "nanosec": 454831325
+      }
+    },
+    "1774364014464852754": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 359,
+      "msg": "Received a goal, begin computing control effort.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364014,
+        "nanosec": 464762745
+      }
+    },
+    "1774364014627219745": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 409,
+      "msg": "Reached the goal!",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364014,
+        "nanosec": 627160694
+      }
+    },
+    "1774364014654676415": {
+      "file": "./src/clear_costmap_service.cpp",
+      "function": "clearEntireCallback",
+      "level": 20,
+      "line": 95,
+      "msg": "Received request to clear entirely the local_costmap",
+      "name": "local_costmap.local_costmap",
+      "stamp": {
+        "sec": 1774364014,
+        "nanosec": 654615731
+      }
+    },
+    "1774364014654857073": {
+      "file": "./src/clear_costmap_service.cpp",
+      "function": "clearEntireCallback",
+      "level": 20,
+      "line": 95,
+      "msg": "Received request to clear entirely the global_costmap",
+      "name": "global_costmap.global_costmap",
+      "stamp": {
+        "sec": 1774364014,
+        "nanosec": 654806458
+      }
+    },
+    "1774364014664851782": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 359,
+      "msg": "Received a goal, begin computing control effort.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364014,
+        "nanosec": 664769848
+      }
+    },
+    "1774364014827501914": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 409,
+      "msg": "Reached the goal!",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364014,
+        "nanosec": 827426703
+      }
+    },
+    "1774364014854783315": {
+      "file": "./src/clear_costmap_service.cpp",
+      "function": "clearEntireCallback",
+      "level": 20,
+      "line": 95,
+      "msg": "Received request to clear entirely the local_costmap",
+      "name": "local_costmap.local_costmap",
+      "stamp": {
+        "sec": 1774364014,
+        "nanosec": 854562291
+      }
+    },
+    "1774364014855353443": {
+      "file": "./src/clear_costmap_service.cpp",
+      "function": "clearEntireCallback",
+      "level": 20,
+      "line": 95,
+      "msg": "Received request to clear entirely the global_costmap",
+      "name": "global_costmap.global_costmap",
+      "stamp": {
+        "sec": 1774364014,
+        "nanosec": 855269306
+      }
+    },
+    "1774364014864927313": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 359,
+      "msg": "Received a goal, begin computing control effort.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364014,
+        "nanosec": 864820894
+      }
+    },
+    "1774364015027580501": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 409,
+      "msg": "Reached the goal!",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364015,
+        "nanosec": 27522863
+      }
+    },
+    "1774364015054627382": {
+      "file": "./src/clear_costmap_service.cpp",
+      "function": "clearEntireCallback",
+      "level": 20,
+      "line": 95,
+      "msg": "Received request to clear entirely the local_costmap",
+      "name": "local_costmap.local_costmap",
+      "stamp": {
+        "sec": 1774364015,
+        "nanosec": 54570586
+      }
+    },
+    "1774364015054936822": {
+      "file": "./src/clear_costmap_service.cpp",
+      "function": "clearEntireCallback",
+      "level": 20,
+      "line": 95,
+      "msg": "Received request to clear entirely the global_costmap",
+      "name": "global_costmap.global_costmap",
+      "stamp": {
+        "sec": 1774364015,
+        "nanosec": 54830313
+      }
+    },
+    "1774364015064994399": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 359,
+      "msg": "Received a goal, begin computing control effort.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364015,
+        "nanosec": 64872841
+      }
+    },
+    "1774364015225190833": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364015,
+        "nanosec": 225053836
+      }
+    },
+    "1774364015227307960": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 30,
+      "line": 414,
+      "msg": "Control loop missed its desired rate of 20.0000Hz",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364015,
+        "nanosec": 227251153
+      }
+    },
+    "1774364016210371132": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364016,
+        "nanosec": 210286905
+      }
+    },
+    "1774364017227387728": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364017,
+        "nanosec": 227315483
+      }
+    },
+    "1774364018277495362": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364018,
+        "nanosec": 277327247
+      }
+    },
+    "1774364019327483772": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364019,
+        "nanosec": 327322190
+      }
+    },
+    "1774364020327369979": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364020,
+        "nanosec": 327311359
+      }
+    },
+    "1774364021377403574": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364021,
+        "nanosec": 377316000
+      }
+    },
+    "1774364022377371914": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364022,
+        "nanosec": 377314045
+      }
+    },
+    "1774364023427376935": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364023,
+        "nanosec": 427314879
+      }
+    },
+    "1774364024477423054": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364024,
+        "nanosec": 477316003
+      }
+    },
+    "1774364025227429714": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 40,
+      "line": 420,
+      "msg": "Failed to make progress",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364025,
+        "nanosec": 227362908
+      }
+    },
+    "1774364025227502269": {
+      "file": "/opt/ros/humble/include/nav2_util/simple_action_server.hpp",
+      "function": "warn_msg",
+      "level": 30,
+      "line": 605,
+      "msg": "[follow_path] [ActionServer] Aborting handle.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364025,
+        "nanosec": 227448859
+      }
+    },
+    "1774364025869460553": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 359,
+      "msg": "Received a goal, begin computing control effort.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364025,
+        "nanosec": 869386374
+      }
+    },
+    "1774364026919657163": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364026,
+        "nanosec": 919577634
+      }
+    },
+    "1774364027969682653": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364027,
+        "nanosec": 969581113
+      }
+    },
+    "1774364028969677663": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364028,
+        "nanosec": 969577606
+      }
+    },
+    "1774364030019654952": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364030,
+        "nanosec": 19575163
+      }
+    },
+    "1774364031019852562": {
+      "file": "./src/controller_server.cpp",
+      "function": "updateGlobalPath",
+      "level": 20,
+      "line": 536,
+      "msg": "Passing new path to controller.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364031,
+        "nanosec": 19591563
+      }
+    },
+    "1774364032332230130": {
+      "file": "./src/planner_server.cpp",
+      "function": "transformPosesToGlobalFrame",
+      "level": 30,
+      "line": 324,
+      "msg": "Could not transform the start or goal pose in the costmap frame",
+      "name": "planner_server",
+      "stamp": {
+        "sec": 1774364032,
+        "nanosec": 332088545
+      }
+    },
+    "1774364032332284883": {
+      "file": "/opt/ros/humble/include/nav2_util/simple_action_server.hpp",
+      "function": "warn_msg",
+      "level": 30,
+      "line": 605,
+      "msg": "[compute_path_to_pose] [ActionServer] Aborting handle.",
+      "name": "planner_server",
+      "stamp": {
+        "sec": 1774364032,
+        "nanosec": 332225161
+      }
+    },
+    "1774364032369643357": {
+      "file": "./src/controller_server.cpp",
+      "function": "computeControl",
+      "level": 20,
+      "line": 392,
+      "msg": "Goal was canceled. Stopping the robot.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364032,
+        "nanosec": 369581852
+      }
+    },
+    "1774364032369673403": {
+      "file": "/opt/ros/humble/include/nav2_util/simple_action_server.hpp",
+      "function": "info_msg",
+      "level": 20,
+      "line": 575,
+      "msg": "[follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.",
+      "name": "controller_server",
+      "stamp": {
+        "sec": 1774364032,
+        "nanosec": 369643728
+      }
+    }
+  }
+}
