@@ -21,6 +21,8 @@ class explainerImpl(Node):
 
         self.explainer_server = None  # action server to start/stop this explainer
 
+        self.logs = []  # Store logs with timestamps for later filtering
+
         self.get_logger().info('component_explainer_sittable started, but not yet configured.')
 
     def rosout_callback(self, msg: Log):

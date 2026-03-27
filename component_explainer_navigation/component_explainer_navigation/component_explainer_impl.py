@@ -1,7 +1,7 @@
 import json
 
-from llama_msgs.action import GenerateChatCompletions
-from llama_msgs.msg import ChatMessage
+# from llama_msgs.action import GenerateChatCompletions
+# from llama_msgs.msg import ChatMessage
 
 from rclpy.action import ActionServer, GoalResponse
 from rclpy.lifecycle import Node
@@ -31,12 +31,12 @@ DEFAULT_API_KEY = (
 
 class explainerImpl(Node):
     """
-    Implementation of component_explain_navigation.
+    Implementation of component_explainer_navigation.
     """
 
     def __init__(self) -> None:
         """Construct the node."""
-        super().__init__('explainer_component_explain_navigation')
+        super().__init__('explainer_component_explainer_navigation')
 
         # Declare LLM parameters
         self.declare_parameter('llm_model', DEFAULT_LLM_MODEL)
@@ -83,7 +83,7 @@ class explainerImpl(Node):
         self.is_charging = None
         self.is_joystick_manual = None
 
-        self.get_logger().info('component_explain_navigation started, but not yet configured.')
+        self.get_logger().info('component_explainer_navigation started, but not yet configured.')
 
     def on_request_goal(self, goal_handle):
         """Accept incoming goal if appropriate."""
@@ -100,9 +100,8 @@ class explainerImpl(Node):
         input_data = goal_handle.request.json_data
         input_data = json.loads(input_data)
 
-        question = input_data.get("question", "")
-        time_range_start = input_data.get("time_range_start", "")
-        time_range_end = input_data.get("time_range_end", "")
+        initial_timestamp = context.get("initial_timestamp", "")
+        final_timestamp = context.get("final_timestamp", "")
 
         self.get_logger().info(f"Starting the explainer with question <{question}>")
 
@@ -111,15 +110,14 @@ class explainerImpl(Node):
         goal_handle.publish_feedback(feedback_msg)
 
         explanation = self.generate_explanation(
-            question=question,
-            time_range_start=time_range_start,
-            time_range_end=time_range_end)
+            time_range_start=initial_timestamp,
+            time_range_end=final_timestamp)
 
         feedback_msg.status = "explainer completed"
         goal_handle.publish_feedback(feedback_msg)
 
         generated_explanation = Explanation(
-            component_name="component_explain_navigation",
+            component_name="component_explainer_navigation",
             explanation=explanation)
 
         self.get_logger().info(f"Generated explanation: {generated_explanation.explanation}")
@@ -129,7 +127,7 @@ class explainerImpl(Node):
         goal_handle.succeed()
         return GenerateComponentExplanation.Result(explanations=explanations)
 
-    def generate_explanation(self, question, time_range_start, time_range_end):
+    def generate_explanation(self, time_range_start, time_range_end):
         """
         Generate an explanation based on the question and time range using ollama.
         """
@@ -367,7 +365,7 @@ class explainerImpl(Node):
 
         # create the control server for ourselves
         self.explainer_server = ActionServer(
-            self, GenerateComponentExplanation, "/component_explain_navigation/explain",
+            self, GenerateComponentExplanation, "/component_explainer_navigation/explain",
             goal_callback=self.on_request_goal,
             execute_callback=self.on_request_exec)
 
@@ -407,7 +405,7 @@ class explainerImpl(Node):
             10
         )
 
-        self.get_logger().info("component_explain_navigation is configured, but not yet active")
+        self.get_logger().info("component_explainer_navigation is configured, but not yet active")
         return TransitionCallbackReturn.SUCCESS
 
     def on_activate(self, state: State) -> TransitionCallbackReturn:
@@ -415,21 +413,21 @@ class explainerImpl(Node):
         Activate the skill.
         """
 
-        self.get_logger().info("component_explain_navigation is active and running")
+        self.get_logger().info("component_explainer_navigation is active and running")
         return super().on_activate(state)
 
     def on_deactivate(self, state: State) -> TransitionCallbackReturn:
         """Stop the timer to stop calling the `run` function."""
         self.get_logger().info("Stopping explainer...")
 
-        self.get_logger().info("component_explain_navigation is stopped (inactive)")
+        self.get_logger().info("component_explainer_navigation is stopped (inactive)")
         return super().on_deactivate(state)
 
     def on_shutdown(self, state: State) -> TransitionCallbackReturn:
         """
         Shutdown the node, after a shutting-down transition is requested.
         """
-        self.get_logger().info('Shutting down component_explain_navigation.')
+        self.get_logger().info('Shutting down component_explainer_navigation.')
 
-        self.get_logger().info("component_explain_navigation finalized.")
+        self.get_logger().info("component_explainer_navigation finalized.")
         return TransitionCallbackReturn.SUCCESS

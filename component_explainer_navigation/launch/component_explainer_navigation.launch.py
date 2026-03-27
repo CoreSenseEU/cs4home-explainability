@@ -10,8 +10,8 @@ from launch_pal import get_pal_configuration
 
 
 def generate_launch_description():
-    pkg = 'component_explain_navigation'
-    node = 'component_explain_navigation'
+    pkg = 'component_explainer_navigation'
+    node = 'component_explainer_navigation'
     ld = LaunchDescription()
 
     config = get_pal_configuration(pkg=pkg, node=node, ld=ld)

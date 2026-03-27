@@ -2,13 +2,13 @@ import rclpy
 
 from rclpy.executors import MultiThreadedExecutor
 
-import component_explain_navigation.component_explainer_impl
+import component_explainer_navigation.component_explainer_impl
 
 
 def main():
     rclpy.init()
 
-    explainer = component_explain_navigation.component_explainer_impl.explainerImpl()
+    explainer = component_explainer_navigation.component_explainer_impl.explainerImpl()
     explainer_executor = MultiThreadedExecutor()
     explainer_executor.add_node(explainer)
 

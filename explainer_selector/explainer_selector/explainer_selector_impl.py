@@ -10,7 +10,7 @@ from rclpy.callback_groups import MutuallyExclusiveCallbackGroup
 from rclpy.action import ActionServer, GoalResponse
 
 from explainability_msgs.action import GenerateExplanation, GenerateComponentExplanation
-from diagonostic_msgs.msg import KeyValue
+from diagnostic_msgs.msg import KeyValue
 
 
 class GenerateExplanationImpl(Node):
@@ -43,6 +43,8 @@ class GenerateExplanationImpl(Node):
 
         # Component Explainers
         self.component_explainers = None
+
+        self.last_bt_status = None
 
         self.get_logger().info("Initialising...")
         self.get_logger().info('explainer_selector started, but not yet configured.')
@@ -86,7 +88,10 @@ class GenerateExplanationImpl(Node):
         elif len(list_of_explanations) == 1:
             final_explanation = list_of_explanations[0]
         else:
-            final_explanation = list_of_explanations.join(". ")
+            final_explanation = ". ".join(list_of_explanations)
+
+        # Filter double dots and spaces
+        final_explanation = final_explanation.replace("..", ".").replace("  ", " ")
 
         self.get_logger().info(f"Final explanation: {final_explanation}")
         goal_handle.succeed()
@@ -100,13 +105,13 @@ class GenerateExplanationImpl(Node):
         final_timestamp = None
         initial_timestamp = None
 
-        # Get the latest failure
-        for event in reversed(self.events_buffer):
-            if event[2] == 3:
-                relevant_skill = event[1]
-                final_timestamp = event[0]
-            if event[1] != relevant_skill and relevant_skill is not None:
-                initial_timestamp = event[0]
+        # # Get the latest failure
+        # for event in reversed(self.events_buffer):
+        #     if event[2] == 3:
+        #         relevant_skill = event[1]
+        #         final_timestamp = event[0]
+        #     if event[1] != relevant_skill and relevant_skill is not None:
+        #         initial_timestamp = event[0]
 
         # # Get the latest event that is not "Explain"
         # for event in reversed(self.events_buffer):
@@ -115,6 +120,14 @@ class GenerateExplanationImpl(Node):
         #         final_timestamp = event[0]
         #     if event[1] != relevant_skill and relevant_skill is not None:
         #         initial_timestamp = event[0]
+
+        # Get the event before the latest
+        initial_timestamp = self.events_buffer[-2][0]
+        relevant_skill = self.events_buffer[-2][1]
+
+        # current time
+        final_timestamp = self.get_clock().now().to_msg()
+        final_timestamp = f"{final_timestamp.sec}.{final_timestamp.nanosec}"
 
         relevant_events = {"initial_timestamp": initial_timestamp,
                            "final_timestamp": final_timestamp,
@@ -125,13 +138,21 @@ class GenerateExplanationImpl(Node):
     def select_explainer_and_create_context(self, question: str, relevant_events: dict):
         """Select the component explainer to use."""
         component_explainer = None
-        for component in self.component_skills:
-            if relevant_events["relevant_skill"] in self.component_skills[component]["skills"]:
-                self.get_logger().info(
-                    f"Skill failure detected in skill {relevant_events['relevant_skill']}, "
-                    f"which is handled by {component} explainer")
-                component_explainer = component
-                break
+
+        if "IsSittable" in question:
+            component_explainer = "component_explainer_sittable"
+        elif "IsDetected" in question:
+            component_explainer = "component_explainer_detection"
+        elif "MoveTo" in question:
+            component_explainer = "component_explainer_navigation"
+        else:
+            for component in self.component_skills:
+                if relevant_events["relevant_skill"] in self.component_skills[component]["skills"]:
+                    self.get_logger().info(
+                        f"Skill failure detected in skill {relevant_events['relevant_skill']}, "
+                        f"which is handled by {component} explainer")
+                    component_explainer = component
+                    break
 
         context = relevant_events
 
@@ -150,11 +171,16 @@ class GenerateExplanationImpl(Node):
     def on_new_event(self, msg):
         """Implement the callback when the subscriber receives a new task info."""
 
+        if [msg.key, msg.value] == self.last_bt_status:
+            return
+
+        self.last_bt_status = [msg.key, msg.value]
+
         self.get_logger().info(f"Received new bt status for node {msg.key}: {msg.value}")
 
         current_time_msg = self.get_clock().now().to_msg()
         current_time = f"{current_time_msg.sec}.{current_time_msg.nanosec}"
-        self.events_buffer.append = [current_time, msg.key, msg.value]
+        self.events_buffer.append([current_time, msg.key, msg.value])
 
     def component_explainer_response_callback(self, future):
         goal_handle = future.result()

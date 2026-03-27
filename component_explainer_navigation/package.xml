@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="3">
-  <name>component_explain_navigation</name>
+  <name>component_explainer_navigation</name>
   <version>0.1.0</version>
-  <description>component_explain_navigation</description>
+  <description>component_explainer_navigation</description>
   <maintainer email="todo@todo.todo">TODO</maintainer>
 
   <license>Apache-2.0</license>
