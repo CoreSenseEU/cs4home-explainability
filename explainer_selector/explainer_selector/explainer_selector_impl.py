@@ -124,6 +124,7 @@ class GenerateExplanationImpl(Node):
         # Get the event before the latest
         initial_timestamp = self.events_buffer[-2][0]
         relevant_skill = self.events_buffer[-2][1]
+        print(f"Relevant skill: {relevant_skill}, initial timestamp: {initial_timestamp}")
 
         # current time
         final_timestamp = self.get_clock().now().to_msg()

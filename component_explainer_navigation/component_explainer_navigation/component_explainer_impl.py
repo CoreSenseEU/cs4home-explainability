@@ -1,8 +1,8 @@
 import json
 
-# from llama_msgs.action import GenerateChatCompletions
-# from llama_msgs.msg import ChatMessage
+from llama_msgs.action import GenerateResponse
 
+import rclpy
 from rclpy.action import ActionServer, GoalResponse
 from rclpy.lifecycle import Node
 from rclpy.lifecycle import State
@@ -13,7 +13,7 @@ from explainability_msgs.msg import Explanation
 
 from rcl_interfaces.msg import Log
 
-import requests
+# import requests
 
 from geometry_msgs.msg import PoseWithCovarianceStamped
 
@@ -214,52 +214,50 @@ class explainerImpl(Node):
         Relevant logs: {relevant_logs}
         """
 
-        headers = {}
-        if self.api_key:
-            headers['Authorization'] = f"Bearer {self.api_key}"
-        response = requests.post(
-            f'{self.llm_host}/v1/chat/completions',
-            json={
-                'model': self.llm_model,
-                'messages': [
-                    {
-                        'role': 'system',
-                        'content': prompt_system,
-                    },
-                    {
-                        'role': 'user',
-                        'content': prompt_user,
-                    }],
-                'temperature': 0.0,
-                'stream': False},
-            headers=headers)
-        if response.status_code != requests.codes.ok:
-            raise RuntimeError(
-                f'Ollama server response [{response.status_code}]: {response.text}')
-        response_json = response.json()['choices'][0]
+        # headers = {}
+        # if self.api_key:
+        #     headers['Authorization'] = f"Bearer {self.api_key}"
+        # response = requests.post(
+        #     f'{self.llm_host}/v1/chat/completions',
+        #     json={
+        #         'model': self.llm_model,
+        #         'messages': [
+        #             {
+        #                 'role': 'system',
+        #                 'content': prompt_system,
+        #             },
+        #             {
+        #                 'role': 'user',
+        #                 'content': prompt_user,
+        #             }],
+        #         'temperature': 0.0,
+        #         'stream': False},
+        #     headers=headers)
+        # if response.status_code != requests.codes.ok:
+        #     raise RuntimeError(
+        #         f'Ollama server response [{response.status_code}]: {response.text}')
+        # response_json = response.json()['choices'][0]
 
-        explanation = str(response_json['message']['content']).strip()
-        self.get_logger().info(f"Generated explanation: {explanation}")
+        # explanation = str(response_json['message']['content']).strip()
+        # self.get_logger().info(f"Generated explanation: {explanation}")
 
-        # goal = GenerateChatCompletions.Goal()
-        # goal.messages = [
-        #     ChatMessage(role="system", content=prompt_system),
-        #     ChatMessage(role="user", content=prompt_user)
-        # ]
-        # goal.sampling_config.temp = 0.0
-        # goal.stream = False
+        prompt = prompt_system + "\n" + prompt_user
+        goal = GenerateResponse.Goal()
+        goal.prompt = prompt
+        goal.sampling_config.temp = 0.0
+        # goal.reset = True
 
-        # # wait for the server and send the goal
-        # self.action_client.wait_for_server()
-        # send_goal_future = self.action_client.send_goal_async(goal)
+        # wait for the server and send the goal
+        self.action_client.wait_for_server()
+        send_goal_future = self.action_client.send_goal_async(goal)
 
-        # # wait for the server
-        # rclpy.spin_until_future_complete(self, send_goal_future)
-        # get_result_future = send_goal_future.result().get_result_async()
+        # wait for the server
+        rclpy.spin_until_future_complete(self, send_goal_future)
+        get_result_future = send_goal_future.result().get_result_async()
 
-        # # wait again and take the result
-        # rclpy.spin_until_future_complete(self, get_result_future)
-        # explanation = get_result_future.result().result
+        # wait again and take the result
+        rclpy.spin_until_future_complete(self, get_result_future)
+        explanation = get_result_future.result().result.response.text
 
         return explanation
 
