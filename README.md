@@ -10,7 +10,7 @@ The main elements of the framework are:
 
 Getting Started
 ----------------
-To test the current implementation, you can first build the workspace and then launch the explainer selector along with the component explainers using the provided launch file. Remember to set your API key for the LLM service as a launch argument, or point to your local ollama server.
+To test the current implementation, you can first build the workspace and then launch the explainer selector along with the component explainers using the provided launch file. Then, you can send a goal to the /generate_explanation action server to trigger the explanation generation process.
 
 ```bash
 colcon build
