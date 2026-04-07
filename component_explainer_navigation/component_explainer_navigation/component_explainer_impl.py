@@ -98,7 +98,7 @@ class explainerImpl(Node):
         """Process incoming goal."""
         print("Executing goal...")
         input_data = goal_handle.request.json_data
-        input_data = json.loads(input_data)
+        context = json.loads(input_data)
 
         initial_timestamp = context.get("initial_timestamp", "")
         final_timestamp = context.get("final_timestamp", "")
