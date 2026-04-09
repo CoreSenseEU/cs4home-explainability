@@ -22,11 +22,7 @@ from rclpy.qos import QoSProfile, QoSReliabilityPolicy, QoSDurabilityPolicy
 
 DEFAULT_LLM_MODEL = 'gpt-4.1-mini'
 DEFAULT_LLM_HOST = 'https://api.openai.com'
-DEFAULT_API_KEY = (
-    'sk-proj-NO6OdcYOM6h_57LLMfWhr5SG8Nlq45KHQdZH0kLIIwPM1IE4otPmt1nsODU'
-    '-FSfd5SCtKuZ6mHT3BlbkFJDPQ2YaSQmM8rc-92J3_ss5CHOfmGAmGMfV00_TtI7k5x2eLXtkTu'
-    '-cedCTO4j-xqFihhSCFAMA'
-)
+DEFAULT_API_KEY = ''
 
 
 class explainerImpl(Node):
