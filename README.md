@@ -1,22 +1,56 @@
-Coresense Explainability Framework
-====================
+# CoreSense4Home Explainability
 
-This repository contains an implementation of Coresense explainability ofr the Robocup@Home league.
+This repository provides the explainability framework used by the CoreSense4Home RoboCup@Home testbed. It collects behaviour-tree status and component evidence, selects the relevant component explainer and returns a short explanation of the robot's behaviour.
 
+The implemented component explainers cover `IsDetected`, `IsSittable` and `MoveTo`.
 
-The main elements of the framework are:
-- Component Explainers: These are responsible for generating explanations tailored to specific modules of the robotic system. In this case, we have implemented three component explainers: for the IsDetected module, the IsSittable module and the MoveTo module.
-- Explainer Selector: This module selects the most appropriate component explainer based on the behaviour tree status.
+## CoreSense role
 
-Getting Started
-----------------
-To test the current implementation, you can first build the workspace and then launch the explainer selector along with the component explainers using the provided launch file. Then, you can send a goal to the /generate_explanation action server to trigger the explanation generation process.
+The terms below follow the [CoreSense Ontology (CSO)](https://w3id.org/coresense/cso).
 
-```bash
-colcon build
+- Explanation generation is a [Cognitive Function](https://w3id.org/coresense/cso#CognitiveFunction) that processes execution information.
+- The framework provides the [Cognitive Capability](https://w3id.org/coresense/cso#CognitiveCapability) to explain selected robot actions and failures to a person.
+- Behaviour-tree events and component logs form the relevant [Context](https://w3id.org/coresense/cso#Context).
+- The generated explanation communicates the [Meaning](https://w3id.org/coresense/cso#Meaning) assigned to the observed execution evidence.
+
+## Data flow
+
+~~~mermaid
+flowchart LR
+    events["Behaviour-tree status and component evidence"] --> selector["Explainer selector"]
+    question["Explanation request"] --> selector
+    selector --> component["Detection, seating or navigation explainer"]
+    component --> explanation["Human-readable explanation"]
+~~~
+
+The repository contains the selector, three component explainers and the `explainability_msgs` interfaces.
+
+## Requirements and build
+
+Use a ROS 2 Humble workspace containing the CoreSense4Home dependencies. The navigation explainer also requires the LLM service used by `llama_ros`.
+
+~~~bash
+mkdir -p ~/cs4home_ws/src
+cd ~/cs4home_ws/src
+git clone https://github.com/CoreSenseEU/cs4home-explainability.git
+cd ..
+rosdep install --from-paths src --ignore-src -r -y
+colcon build --symlink-install
 source install/setup.bash
-ros2 launch explainer_selector explainer_selector.launch.py
+~~~
 
-ros2 action send_goal /generate_explanation explainability_msgs/action/GenerateExplanation "question: ''
-auto_triggered: true" 
-```
+## Run
+
+The launch file starts the selector and all component explainers, then configures and activates their lifecycle nodes.
+
+~~~bash
+ros2 launch explainer_selector explainer_selector.launch.py
+~~~
+
+Request an explanation with:
+
+~~~bash
+ros2 action send_goal /generate_explanation \
+  explainability_msgs/action/GenerateExplanation \
+  "{question: 'Why did IsDetected fail?', auto_triggered: false}"
+~~~
